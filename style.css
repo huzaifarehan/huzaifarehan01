@@ -1,0 +1,497 @@
+* {
+    /* box-sizing: border-box; */
+    /* display: inline-block; */
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    /* font-size: 20px; */
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.heading2 {
+    font-size: 1.3rem;
+}
+h4{
+    display: inline-block;
+    border-bottom: 4px solid orangered;
+    margin-bottom: 2%;
+}
+
+nav {
+    /* background-color: black; */
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 15%;
+}
+
+nav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    /* font-family: 'Dancing Script', cursive; */
+    border: 2px solid orangered;
+    width: 155px;
+    height: 155px;
+    margin: 2em 2.5em;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    transform: rotate(360deg);
+    /* transition: all 1s ease-in-out ; */
+    /* font-size: 1em; */
+}
+/* .logo :hover{
+    background-color: palegreen;
+} */
+
+.menu {
+    padding: 1em 1.75em;
+    /* font-size: 0.8em; */
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li{
+    list-style: none;
+    color: #a59d9d;
+    padding: 0.4em 0em;
+    border-bottom: 2px solid #a59d9d;
+}
+.menu li a{
+    color: #a59d9d;
+    text-decoration: none ;
+}
+.menu ul li :hover {
+    cursor: pointer;
+    color: orangered;
+    /* border-bottom: 2px solid orangered; */
+}
+.social {
+    padding: 1em 1.75em;
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    padding: 0.7em;
+    width: 30px;
+}
+
+.copyright {
+    padding: 1em 2.75em;
+    font-size: 0.6em;
+}
+
+.home {
+    text-shadow: 2px 2px 10px black;
+    box-shadow: 0px 6px 10px black;
+    color: orangered;
+    position: relative;
+    display: flex;
+    /* border: 2px solid black; */
+    width: 34%;
+}
+
+.home::before {
+    content: "";
+    background: url(./images/huzaifa3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transition: all 1s ease-in-out;
+}
+
+.home>div {
+    margin: 1.8em 1.8em;
+    align-self: flex-end;
+}
+
+.home>div>h1 {
+    border-bottom: 2px solid orangered;
+}
+
+.home>div>h4 {
+    display: inline-block;
+    padding: 0.5em 0em;
+    /* border-top: 2px solid white; */
+    border-bottom: 2px solid orangered;
+}
+
+.about {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    width: 50.7%;
+}
+.about::before {
+    content: "";
+    background: url(./images/7.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.upabout{
+    padding: 2% 3% ; 
+
+}
+.underline p{
+    font-weight: bold;
+    border-bottom: 2px solid orangered;
+    padding: 1%;
+}
+.underline h1{
+    display: inline-block;
+    margin-bottom: 3%;
+    border-bottom: 6px solid orangered;
+}
+.aboutpadd{
+    padding: 0% 19%;
+}
+.skills ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.bigcontainer {
+    text-shadow: 2px 2px 10px orangered;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 22em;
+    height: 2em;
+}
+
+.box {
+    align-self: center;
+    /* border-radius: 10%; */
+    /* border: 2px solid rgb(0, 146, 0); */
+    background-color: black;
+    box-shadow: 1px 1px 10px orangered;
+    width: 15em;
+    height: 0.5em;
+}
+
+.container1::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: html;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+@keyframes html {
+    from {
+        width: 0.5em;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+.container2::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: css;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+@keyframes css {
+    from {
+        width: 0.5em;
+    }
+    to {
+        width: 13em;
+    }
+}
+
+.container3::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: js;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+@keyframes js {
+    from {
+        width: 0.5em;
+    }
+    to {
+        width: 4em;
+    }
+}
+
+.container4::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: bootstrap;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    /* animation-direction: reverse; */
+}
+
+@keyframes bootstrap {
+    from {
+        width: 0.5em;
+    }
+    to {
+        width: 12em;
+    }
+}
+
+.container5::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: react;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes react {
+    from {
+        width: 2em;
+    }
+    to {
+        width: 15em;
+    }
+}
+
+.container6::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: rt;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes rt {
+    from {
+        width: 1.5em;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+.container7::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: db;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes db {
+    from {
+        width: 2.5em;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+.container8::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: sql;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes sql {
+    from {
+        width: 3em;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+.container9::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: express;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes express {
+    from {
+        width: 1.5em;
+    }
+    to {
+        width: 14em;
+    }
+}
+
+.container0::after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 100;
+    width: 0.5em;
+    height: 0.5em;
+    z-index: 5;
+    /* border-radius: 25%; */
+    /* border: 2px solid black; */
+    background-color: orangered;
+    animation-name: node;
+    animation-duration: 2s;
+    /* animation-iteration-count: 2; */
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+@keyframes node {
+    from {
+        width: 1.2em;
+    }
+    to {
+        width: 14em;
+    }
+}
